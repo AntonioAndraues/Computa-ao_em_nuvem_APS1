@@ -36,12 +36,12 @@ deactivate () {
 
 # unset irrelevant variables
 deactivate nondestructive
-
-VIRTUAL_ENV="/Users/antonioandraues/insper/6-semestre/Cloud/Computa-ao_em_nuvem_APS1/env"
+CAM=$(pwd)
+VIRTUAL_ENV=$CAM
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
-PATH="$VIRTUAL_ENV/bin:$PATH"
+PATH="$VIRTUAL_ENV:$PATH"
 export PATH
 
 # unset PYTHONHOME if set
